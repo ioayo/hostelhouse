@@ -1,0 +1,29 @@
+.hostel-tabs
+  .hostel-tabs__pane, .hostel-tabs-inner__pane
+    @extend %clearfix
+  .tab-button
+    cursor: pointer
+    width: 50%
+    float: left
+    padding: 10px 0
+    display: flex
+    justify-content: center
+    align-items: center
+    background-color: $mainColor
+    span
+      line-height: 0.9
+      margin-left: 10px
+  .tab-button.active
+    font-weight: bold
+    text-decoration: underline
+
+.tabs-content__item
+  display: none
+.tabs-content__item.active
+  display: block
+
+.hostel-tabs-inner__pane
+  display: flex
+  .tab-button
+    background: #fff
+    border-bottom: 3px solid $secondColor

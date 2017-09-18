@@ -1,0 +1,168 @@
+@import "fonts"
+@import "_vars"
+@import "libs"
+@import "_mixins/mixins"
+@import "sprite"
+@import "main/header"
+@import "main/about"
+@import "main/map"
+@import "main/infra"
+@import "main/aparments"
+@import "main/hostel"
+@import "main/advantages"
+@import "main/reviews"
+@import "main/clients"
+@import "main/rewards"
+@import "main/form"
+@import "main/reception"
+@import "main/booking"
+@import "main/scheme"
+@import "main/bonuses"
+@import "main/numbers"
+@import "main/numbers-more"
+@import "main/number-slider"
+
+*
+  box-sizing: border-box
+*::-webkit-input-placeholder
+  color: #666
+  opacity: 1
+
+*:-moz-placeholder
+  color: #666
+  opacity: 1
+
+*::-moz-placeholder
+  color: #666
+  opacity: 1
+
+*:-ms-input-placeholder
+  color: #666
+  opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+  color: #666
+
+body input:required:valid,
+body textarea:required:valid
+  color: #666
+
+html, body
+  height: 100%
+
+body
+  font-size: 16px
+  min-width: 320px
+  position: relative
+  line-height: 1.75
+  font-family: $default-font
+  overflow-x: hidden
+  opacity: 1
+
+.img-responsive
+  display: block
+  max-width: 100%
+  height: auto
+
+.container
+  width: $containerWidth
+  margin: 0 auto
+  height: 100%
+
+.title
+  text-transform: uppercase
+  font-size: 36px
+  font-weight: bold
+  text-align: center
+  margin-bottom: 16px
+  font-family: $default-font, sans-serif
+
+h3.title
+  font-size: 28px
+  line-height: 1.2
+  text-align: left
+
+.text-center
+  text-align: center
+
+.bottom-border
+  border-bottom: 40px solid $secondColor
+
+.main-title
+  background-color: $secondColor
+  color: #fff
+  font-size: 32px
+  text-transform: uppercase
+  font-weight: bold
+  text-align: center
+  padding: 20px 0
+
+.hostel-icon
+  background-image: url("../img/sprite.png")
+  background-repeat: no-repeat
+  display: inline-block
+
+.navigation
+  background-color: $mainColor
+  box-shadow: -1px -2px 31px 0px rgba(0,0,0,0.75)
+  .navigation-list
+    display: flex
+    justify-content: space-around
+    li
+      text-align: center
+      display: inline-block
+      text-transform: uppercase
+      flex: 1 1 auto
+      padding: 10px 0
+      @include std-transition
+      position: relative
+      &.active, &:hover
+        background-color: darken($mainColor, 3%)
+      &:hover
+        &:after
+          z-index: 9999
+          content: ''
+          display: inline-block
+          bottom: -10px
+          left: 50%
+          transform: translateX(-10px)
+          position: absolute
+          width: 0
+          height: 0
+          border-left: 20px solid transparent
+          border-right: 20px solid transparent
+          border-top: 14px solid darken($mainColor, 3%)
+      a
+        text-decoration: none
+        color: #000
+        font-size: 20px
+        line-height: 1.4
+        display: block
+      i
+        position: relative
+        right: 10px
+    li.active
+      position: relative
+      &:after
+        z-index: 9999
+        content: ''
+        display: inline-block
+        bottom: -10px
+        left: 50%
+        transform: translateX(-10px)
+        position: absolute
+        width: 0
+        height: 0
+        border-left: 20px solid transparent
+        border-right: 20px solid transparent
+        border-top: 14px solid darken($mainColor, 3%)
+
+
+.navbar-fixed-top
+  z-index: 999999
+  position: fixed
+  top: 0
+  width: 100%
+@import "media"
+// Всегда в конце

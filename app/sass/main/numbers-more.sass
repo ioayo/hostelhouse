@@ -1,0 +1,113 @@
+.numbers-more
+  background-color: #e0e0e1
+  padding: 25px 0
+
+.numbers-more__wrap
+  @extend %clearfix
+  display: flex
+
+.numbers-more__left
+  width: 65%
+  display: flex
+  flex-wrap: wrap
+
+.numbers__list
+  width: 50%
+  li
+    position: relative
+    margin-left: 30px
+    &:before
+      position: absolute
+      content: ''
+      background-image: url(../img/sprite.png)
+      background-position: -1692px -1454px
+      width: 16px
+      height: 17px
+      left: -22px
+      top: 3px
+
+.numbers-advantages
+  display: flex
+  flex-wrap: wrap
+  width: 100%
+  margin-top: 35px
+  justify-content: space-between
+  li
+    width: 50%
+    align-items: center
+    margin-bottom: 15px
+    display: flex
+    .img-wrap
+      display: inline-block
+      width: 80px
+      margin-right: 24px
+    p
+      font-weight: bold
+      display: inline-block
+      max-width: 175px
+
+.numbers-more__text
+  margin-top: 25px
+  font-size: 20px
+
+.numbers-more__right
+  display: inline-block
+  width: 35%
+  margin-top: 50px
+
+.numbers-more__form
+  background-color: #fff
+  border-radius: 10px 10px 0 0
+  overflow: hidden
+  form
+    padding: 30px 20px
+    input
+      width: 100%
+      background-color: #e0e0e1
+      border: none
+      outline: none
+      padding: 10px 8px
+      margin-bottom: 20px
+      border-radius: 7px
+      font-size: 18px
+    button
+      width: 100%
+      background-color: $secondColor
+      color: #fff
+      border: none
+      outline: none
+      font-size: 18px
+      border-radius: 7px
+      padding: 20px 30px
+      cursor: pointer
+      @include std-transition
+      &:hover
+        background-color: lighten($secondColor, 10%)
+
+.numbers-more__title
+  background-color: $secondColor
+  text-transform: uppercase
+  color: #fff
+  text-align: center
+  padding: 15px 20px
+  display: flex
+
+.numbers-more__title-left, .numbers-more__title-right
+  width: 50%
+
+.numbers-more__title-left
+  font-size: 42px
+  font-weight: bold
+  line-height: 0.8
+  span
+    font-size: 24px
+    font-weight: normal
+
+.numbers-more__title-right
+  font-size: 83px
+  font-weight: bold
+  line-height: 0.8
+
+
+
+

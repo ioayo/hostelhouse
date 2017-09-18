@@ -1,0 +1,60 @@
+.reviews
+  background-color: #f4f4f4
+  padding: 25px 0
+
+.owl-item
+  display: flex
+  justify-content: center
+
+.review__slider, .rewards__slider
+  position: relative
+  .owl-prev, .owl-next
+    position: absolute
+    top: 50%
+    margin-top: -30px
+    font-size: 22px
+    border: 3px solid black
+    border-radius: 50%
+    width: 40px
+    height: 40px
+    display: flex
+    justify-content: center
+    align-items: center
+  .owl-prev
+    left: -40px
+  .owl-next
+    right: -40px
+
+.reviews__title
+  font-weight: bold
+  font-size: 32px
+  text-transform: uppercase
+  text-align: center
+  margin-bottom: 25px
+
+.review__item
+  align-items:  center
+  @extend %clearfix
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 100%
+
+.review__img
+  width: 30%
+  border-radius: 20px
+  overflow: hidden
+  margin-right: 25px
+  float: left
+
+.review__text
+  font-size: 18px
+  width: 60%
+  float: left
+  span
+    display: inline-block
+    margin-bottom: 10px
+  .review__descr
+    font-weight: bold
+
+

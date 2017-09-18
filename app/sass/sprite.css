@@ -1,0 +1,246 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-24-7 {
+  background-image: url(sprite.png);
+  background-position: -1879px -1306px;
+  width: 57px;
+  height: 54px;
+}
+.icon-TV {
+  background-image: url(sprite.png);
+  background-position: -1226px -1454px;
+  width: 51px;
+  height: 43px;
+}
+.icon-bed {
+  background-image: url(sprite.png);
+  background-position: 0px -1306px;
+  width: 633px;
+  height: 633px;
+}
+.icon-belie {
+  background-image: url(sprite.png);
+  background-position: -653px -653px;
+  width: 633px;
+  height: 633px;
+}
+.icon-big-home-white {
+  background-image: url(sprite.png);
+  background-position: -896px -1306px;
+  width: 223px;
+  height: 246px;
+}
+.icon-big-home-yellow {
+  background-image: url(sprite.png);
+  background-position: -653px -1306px;
+  width: 223px;
+  height: 246px;
+}
+.icon-black-white-icon {
+  background-image: url(sprite.png);
+  background-position: -1580px -1454px;
+  width: 36px;
+  height: 40px;
+}
+.icon-button-grey-transparent {
+  background-image: url(sprite.png);
+  background-position: -1692px -1454px;
+  width: 16px;
+  height: 17px;
+}
+.icon-button-transparent {
+  background-image: url(sprite.png);
+  background-position: -1728px -1454px;
+  width: 16px;
+  height: 16px;
+}
+.icon-button-white {
+  background-image: url(sprite.png);
+  background-position: -1764px -1454px;
+  width: 16px;
+  height: 16px;
+}
+.icon-cleaning {
+  background-image: url(sprite.png);
+  background-position: -1287px -1306px;
+  width: 128px;
+  height: 128px;
+}
+.icon-control {
+  background-image: url(sprite.png);
+  background-position: -1435px -1306px;
+  width: 128px;
+  height: 128px;
+}
+.icon-fly {
+  background-image: url(sprite.png);
+  background-position: -1081px -1572px;
+  width: 44px;
+  height: 44px;
+}
+.icon-food {
+  background-image: url(sprite.png);
+  background-position: -934px -1643px;
+  width: 43px;
+  height: 51px;
+}
+.icon-gornichnie {
+  background-image: url(sprite.png);
+  background-position: -874px -1572px;
+  width: 51px;
+  height: 51px;
+}
+.icon-headphones {
+  background-image: url(sprite.png);
+  background-position: -653px -1572px;
+  width: 128px;
+  height: 128px;
+}
+.icon-hh {
+  background-image: url(sprite.png);
+  background-position: -1297px -1454px;
+  width: 38px;
+  height: 40px;
+}
+.icon-icon-grey {
+  background-image: url(sprite.png);
+  background-position: -1636px -1454px;
+  width: 36px;
+  height: 40px;
+}
+.icon-icon-white {
+  background-image: url(sprite.png);
+  background-position: -1412px -1454px;
+  width: 36px;
+  height: 40px;
+}
+.icon-icon__delievery {
+  background-image: url(sprite.png);
+  background-position: -945px -1572px;
+  width: 48px;
+  height: 48px;
+}
+.icon-kitchen {
+  background-image: url(sprite.png);
+  background-position: -653px 0px;
+  width: 633px;
+  height: 633px;
+}
+.icon-lenin {
+  background-image: url(sprite.png);
+  background-position: -868px -1643px;
+  width: 46px;
+  height: 55px;
+}
+.icon-living {
+  background-image: url(sprite.png);
+  background-position: -1731px -1306px;
+  width: 128px;
+  height: 128px;
+}
+.icon-machine {
+  background-image: url(sprite.png);
+  background-position: 0px -653px;
+  width: 633px;
+  height: 633px;
+}
+.icon-mh {
+  background-image: url(sprite.png);
+  background-position: -1355px -1454px;
+  width: 37px;
+  height: 40px;
+}
+.icon-parking {
+  background-image: url(sprite.png);
+  background-position: -1879px -1380px;
+  width: 55px;
+  height: 51px;
+}
+.icon-prachech {
+  background-image: url(sprite.png);
+  background-position: -801px -1643px;
+  width: 47px;
+  height: 55px;
+}
+.icon-reception {
+  background-image: url(sprite.png);
+  background-position: -1583px -1306px;
+  width: 128px;
+  height: 128px;
+}
+.icon-room-service-circle {
+  background-image: url(sprite.png);
+  background-position: 0px 0px;
+  width: 633px;
+  height: 633px;
+}
+.icon-room-service-yellow {
+  background-image: url(sprite.png);
+  background-position: -1139px -1306px;
+  width: 128px;
+  height: 128px;
+}
+.icon-room-service {
+  background-image: url(sprite.png);
+  background-position: -1013px -1572px;
+  width: 48px;
+  height: 48px;
+}
+.icon-stop-man {
+  background-image: url(sprite.png);
+  background-position: -801px -1572px;
+  width: 53px;
+  height: 51px;
+}
+.icon-tab-icon-hover {
+  background-image: url(sprite.png);
+  background-position: -1468px -1454px;
+  width: 36px;
+  height: 40px;
+}
+.icon-tab-icon {
+  background-image: url(sprite.png);
+  background-position: -1524px -1454px;
+  width: 36px;
+  height: 40px;
+}
+.icon-train {
+  background-image: url(sprite.png);
+  background-position: -997px -1643px;
+  width: 36px;
+  height: 51px;
+}
+.icon-tv-circle {
+  background-image: url(sprite.png);
+  background-position: -1306px -653px;
+  width: 633px;
+  height: 633px;
+}
+.icon-wifi-circle {
+  background-image: url(sprite.png);
+  background-position: -1306px 0px;
+  width: 633px;
+  height: 633px;
+}
+.icon-wifi {
+  background-image: url(sprite.png);
+  background-position: -1139px -1454px;
+  width: 67px;
+  height: 43px;
+}

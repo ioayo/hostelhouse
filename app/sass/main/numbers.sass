@@ -1,0 +1,54 @@
+.numbers
+  display: flex
+
+.numbers__slider
+  width: 65%
+  position: relative
+  .owl-prev, .owl-next
+    $var : 40px
+    position: absolute
+    top: 50%
+    transform: translateY(-$var)
+    font-size: $var
+    color: $secondColor
+    border-radius: 50%
+    border: $var/10 solid $secondColor
+    width: $var + 10px
+    height: $var + 10px
+    display: flex
+    justify-content: center
+    align-items: center
+    i
+      position: relative
+  .owl-next
+    right: 10px
+    i
+      right: -2px
+  .owl-prev
+    left: 10px
+    i
+      left: -2px
+
+.numbers__right
+  width: 35%
+  background-color: $secondColor
+  padding: 45px 40px
+  color: #fff
+  text-align: center
+
+.numbers__title
+  text-transform: uppercase
+  font-size: 32px
+  font-weight: bold
+  text-align: center
+  margin-bottom: 20px
+
+.numbers__price
+  font-size: 30px
+  line-height: 1
+
+.numbers__text
+  font-size: 20px
+  margin-bottom: 40px
+
+

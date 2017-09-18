@@ -1,0 +1,114 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-24-7 {
+  background-image: url(sprite.png);
+  background-position: 0px 0px;
+  width: 57px;
+  height: 54px;
+}
+.icon-TV {
+  background-image: url(sprite.png);
+  background-position: -175px 0px;
+  width: 51px;
+  height: 43px;
+}
+.icon-button-transparent {
+  background-image: url(sprite.png);
+  background-position: -175px -138px;
+  width: 16px;
+  height: 16px;
+}
+.icon-button-white {
+  background-image: url(sprite.png);
+  background-position: -191px -138px;
+  width: 16px;
+  height: 16px;
+}
+.icon-fly {
+  background-image: url(sprite.png);
+  background-position: -175px -43px;
+  width: 44px;
+  height: 44px;
+}
+.icon-food {
+  background-image: url(sprite.png);
+  background-position: -93px -105px;
+  width: 43px;
+  height: 51px;
+}
+.icon-gornichnie {
+  background-image: url(sprite.png);
+  background-position: -124px 0px;
+  width: 51px;
+  height: 51px;
+}
+.icon-icon-grey {
+  background-image: url(sprite.png);
+  background-position: 0px -160px;
+  width: 36px;
+  height: 40px;
+}
+.icon-icon-white {
+  background-image: url(sprite.png);
+  background-position: -136px -105px;
+  width: 36px;
+  height: 40px;
+}
+.icon-lenin {
+  background-image: url(sprite.png);
+  background-position: -47px -105px;
+  width: 46px;
+  height: 55px;
+}
+.icon-parking {
+  background-image: url(sprite.png);
+  background-position: 0px -54px;
+  width: 55px;
+  height: 51px;
+}
+.icon-prachech {
+  background-image: url(sprite.png);
+  background-position: 0px -105px;
+  width: 47px;
+  height: 55px;
+}
+.icon-room-service {
+  background-image: url(sprite.png);
+  background-position: -124px -51px;
+  width: 48px;
+  height: 48px;
+}
+.icon-stop-man {
+  background-image: url(sprite.png);
+  background-position: -55px -54px;
+  width: 53px;
+  height: 51px;
+}
+.icon-train {
+  background-image: url(sprite.png);
+  background-position: -175px -87px;
+  width: 36px;
+  height: 51px;
+}
+.icon-wifi {
+  background-image: url(sprite.png);
+  background-position: -57px 0px;
+  width: 67px;
+  height: 43px;
+}

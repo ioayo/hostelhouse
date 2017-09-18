@@ -1,0 +1,214 @@
+// header styles
+
+.header
+  background-color: $mainColor
+  z-index: 1
+  padding: 20px 0
+  position: relative
+
+.header-wrap
+  display: flex
+  justify-content: space-around
+
+.section
+  position: relative
+  &:after
+    content: ''
+    position: absolute
+    left: 0
+    right: 0
+    bottom: 0
+    height: 3px
+    background: linear-gradient(to right top, white, black, white, black)
+
+.logo
+  display: inline-block
+  margin-right: 20px
+  .logo__img
+    max-width: 100%
+    display: block
+    height: auto
+
+.header__left__descr
+  border-left: 1px solid #000
+  display: inline-block
+  padding-left: 20px
+
+.header__right
+  display: inline-block
+  text-align: right
+  float: right
+  p
+    vertical-align: middle
+    display: flex
+    justify-content: flex-end
+    align-items: center
+  i
+    font-size: 18px
+  a
+    text-decoration: underline
+    color: inherit
+
+a.top-phone, a.top-phone:hover
+  text-decoration: none
+  color: #000
+  font-weight: bold
+  margin-left: 8px
+  transform: translateY(-1px)
+
+//slider
+
+.owl-carousel
+
+.main-slider
+  position: relative
+  //slider controls
+  .owl-controls
+    width: 100%
+    text-align: center
+    .owl-buttons
+      //position: absolute
+      //top: 50%
+      //margin-top: -30px
+      color: #fff
+      font-size: 22px
+      .owl-prev, .owl-next
+        position: absolute
+        top: 50%
+        margin-top: -30px
+        border-radius: 50%
+        width: 40px
+        height: 40px
+        display: flex
+        justify-content: center
+        align-items: center
+        border: 3px solid #fff
+      .owl-prev
+        left: 40px
+      .owl-next
+        right: 40px
+    .owl-pagination
+      position: absolute
+      bottom: 10px
+      display: inline-block
+      .owl-page
+        width: 16px
+        height: 16px
+        margin-right: 5px
+        display: inline-block
+        background: url("../img/sprite.png") no-repeat -1728px -1454px
+      .owl-page.active
+        background: url("../img/sprite.png") no-repeat -1764px -1454px
+
+.main-slider__item
+  background-size: cover
+  background-repeat: no-repeat
+  padding: 50px
+  height: auto
+  position: relative
+  min-height: 60vh
+  z-index: 999
+  display: flex
+  align-items: center
+  width: 100%
+  h2
+    text-transform: uppercase
+    font-size: 30px
+    font-weight: bold
+    color: #fff
+
+.main-slider__wrap
+  display: flex
+  justify-content: flex-end
+  margin-bottom: 40px
+  align-content: flex-end
+
+.main-slider__right
+  width: 50%
+  z-index: 999
+
+
+.main-slider__left
+  width: 50%
+  display: flex
+  align-items: flex-end
+  z-index: 999
+  #header__form
+    width: 100%
+    input, button
+      border: 2px solid $secondColor
+      outline: none
+      padding: 13px 10px
+      border-radius: 10px
+      width: 45%
+      font-size: 18px
+    button
+      cursor: pointer
+      background-color: #b0bc28
+      @include std-transition
+      &:hover
+        background-color: lighten(#b0bc28, 20%)
+
+.main-slider__item-list
+  color: #fff
+  margin-bottom: 25px
+  li
+    position: relative
+    padding-left: 10px
+    color: #fff
+    font-size: 18px
+    &:before
+      position: absolute
+      content: ''
+      right: 100%
+      bottom: 8px
+      width: 16px
+      height: 16px
+      background: url("../img/sprite.png") no-repeat -1728px -1454px
+
+.main-slider__item-title
+  margin-bottom: 25px
+
+.price
+  display: block
+  color: #fff
+  font-size: 22px
+  margin-bottom: 25px
+
+.price__big
+  display: inline-block
+  padding-left: 10px
+  color: #fff
+  font-weight: bold
+  font-size: 36px
+  font-family: 'Calibri', sans-serif
+
+.btn
+  display: inline-block
+  padding: 15px 20px
+  text-transform: uppercase
+  color: inherit
+  border-radius: 10px
+  text-decoration: none
+
+.slider-btn
+  background: transparent
+  border: 2px solid #fff
+  color: #fff
+  margin-right: 25px
+  @include std-transition
+  &:hover
+    background-color: #fff
+    color: #000
+.first-button 
+  font-weight: bold
+
+.main-slider__item-layer
+  position: absolute
+  left: 0
+  right: 0
+  bottom: 0
+  top: 0
+  background: radial-gradient(farthest-corner at 45px 45px, transparent 0%, #000 100%)
+  opacity: .9
+

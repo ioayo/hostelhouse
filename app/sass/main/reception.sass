@@ -1,0 +1,48 @@
+.reception
+  padding: 25px 0
+  background-color: #f4f4f4
+  a
+    display: block
+    text-align: center
+    color: #a64d4f
+  h2
+    font-size: 22px
+    font-weight: bold
+    text-align: center
+  h3.title
+    font-size: 30px
+    text-align: center
+  .reception-wrap
+    display: flex
+    justify-content: space-between
+    margin-bottom: 45px
+    .img-wrapper
+      width: 45%
+      border-radius: 15px
+      overflow: hidden
+    .list-wrapper
+      width: 45%
+      h4
+        font-size: 20px
+        font-weight: bold
+        line-height: 1
+        text-align: left
+        margin-bottom: 15px
+      li
+        color: #000
+        &:before
+          top: 5px
+          height: 17px
+          background: url('/img/sprite.png') no-repeat -1692px -1454px
+  .reception-wrap:nth-child(even)
+    .img-wrapper
+      order: 2
+    .list-wrapper
+      order: 1
+
+  p
+    margin-top: 25px
+.hidden-text
+  display: inline-block
+  height: 0
+  overflow: hidden

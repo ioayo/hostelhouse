@@ -1,0 +1,74 @@
+.scheme
+  padding: 25px 0
+  h3.title
+    text-align: center
+    margin-bottom: 45px
+
+.scheme-blocks
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+
+.scheme-block__title
+  background-color: $mainColor
+  overflow: hidden
+  text-align: center
+  border-radius: 5px 5px 0 0
+  text-transform: uppercase
+  font-weight: bold
+  font-size: 18px
+
+.scheme-blocks__item
+  background: $secondColor
+  width: 26%
+  position: relative
+  border-radius: 5px
+  margin-bottom: 100px
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  &:after
+    font-family: 'fontawesome'
+    font-size: 48px
+    position: absolute
+    color: $secondColor
+
+  .btn
+    color: #fff
+    border: 2px solid #fff
+    display: inline-block
+    width: 60%
+    margin: 0 auto 15px
+    padding: 10px 20px
+  .img-wrap
+    $width: 90px
+    padding: 10px
+    width: $width
+    background: $secondColor
+    border-radius: 50%
+    border: 3px solid $mainColor
+    position: absolute
+    top: -$width/2+$width/5
+    left: -$width/2
+
+.scheme-blocks__item.arrow-right
+  &:after
+    content: "\f054"
+    right: -85px
+    bottom: 85px
+
+.scheme-blocks__item.arrow-down
+  &:after
+    content: ""
+    bottom: -85px
+    right: 135px
+
+.scheme-blocks__item.arrow-left
+  &:after
+    content: "\f053"
+    right: -85px
+    bottom: 85px
+
+.scheme-block__text
+  color: #fff
+  padding: 30px 20px 10px 20px
