@@ -51,18 +51,19 @@
   align-items: center
   padding-left: 10px
 
+.apartment-tabs__content 
+
 .apartment-tabs__content-item
   display: flex
   padding: 20px 0 20px 0
   justify-content: space-between
-
+  position: relative
 
 .apartment-tabs__content-item__left
   width: 48%
   h3
     display: inline-block
     width: 55%
-    margin-right: 25px
     margin-bottom: 0
     align-items: center
   .number-name, .number-price
@@ -130,15 +131,25 @@
     max-width: 100%
     height: 100%
 
-.apartment-tabs__content-item-wrap
-  display: none 
 
 .apartment-tabs__content-item-wrap.active
   display: block
 
 
-
-
+.control-prev, .control-next
+  display: inline-block
+  position: absolute
+  top: 50%
+  font-size: 30px
+  transform: translateY(-45px)
+  line-height: 1
+  color: #000
+.control-prev
+  position: absolute
+  left: -30px
+.control-next
+  position: absolute
+  right: -30px
 
 
 
