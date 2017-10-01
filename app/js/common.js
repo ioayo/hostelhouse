@@ -97,13 +97,14 @@ $(function() {
             container = $this.closest('.tabs'),
             items = container.find('.tab-button'),
             contentItems = container.find('.tabs-content__item'),
+            section = $this.closest('.section'),
             tab_id = $this.attr('data-tab'),
             innerTab = container.find('.inner-tabs');
         e.preventDefault();
         items.removeClass('active');
         contentItems.removeClass('active');
         $this.addClass('active');
-        $(".tabs-content__item[data-tab="+ tab_id +"]").addClass('active');
+        container.find(".tabs-content__item[data-tab="+ tab_id +"]").addClass('active');
         if (innerTab.length > 0) {
             innerTab.find('.tab-button').first().addClass('active');
             innerTab.find('.tabs-content__item').first().addClass('active');
@@ -112,6 +113,7 @@ $(function() {
     $('.apartment-tabs__pane-list').owlCarousel({
         responsive: false,
         items: 7,
+        loop: false,
         navigation: true,
         autoplay: true,
         autoplayTimeout: 5000,
@@ -127,23 +129,22 @@ $(function() {
             tab_id = activeTab.attr('data-tab'),
             section = $this.closest('.section'),
             littleTabs = section.find('.tab-button'),
+            carousel = section.find('.apartment-tabs__pane-list'),
             nextTabId,
             lastId = '00' + (parseInt(items.last().attr('data-tab')) + 1),
-            owlTabs = $('.apartment-tabs__pane-list').data('owlCarousel');
-            console.log(owlTabs);
+            owlTabs = carousel.data('owlCarousel');
         if ($this.hasClass('control-next')) 
             nextTabId = '00' + (parseInt(tab_id) + 1);
         else 
             nextTabId = '00' + (parseInt(tab_id - 1));
-
         if (nextTabId === '000') nextTabId = '00' + items.length;
         if (nextTabId === lastId) nextTabId = '001';
         littleTabs.removeClass('active');
-        $(".tab-button[data-tab="+ nextTabId +"]").addClass('active');
-        if (parseInt(nextTabId) < littleTabs.length-5 && $this.hasClass('control-next')) owlTabs.next();
-        if (parseInt(nextTabId) > 6 && $this.hasClass('control-prev')) owlTabs.prev();
+        carousel.find(".tab-button[data-tab="+ nextTabId +"]").addClass('active');
+        if ($this.hasClass('control-next')) owlTabs.next();
+        if ((parseInt(nextTabId) > 6) && $this.hasClass('control-prev')) owlTabs.prev();
         items.removeClass('active');
-        $(".tabs-content__item[data-tab="+ nextTabId +"]").addClass('active');
+        container.find(".tabs-content__item[data-tab="+ nextTabId +"]").addClass('active');
     })
 
     //clients logo toggle visible
