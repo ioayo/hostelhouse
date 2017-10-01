@@ -102,9 +102,11 @@ $(function() {
             innerTab = container.find('.inner-tabs');
         e.preventDefault();
         items.removeClass('active');
-        contentItems.removeClass('active');
+        contentItems.removeClass('active').css({
+            display: 'none'
+        });
         $this.addClass('active');
-        container.find(".tabs-content__item[data-tab="+ tab_id +"]").addClass('active');
+        container.find(".tabs-content__item[data-tab="+ tab_id +"]").fadeIn("slow").addClass('active');
         if (innerTab.length > 0) {
             innerTab.find('.tab-button').first().addClass('active');
             innerTab.find('.tabs-content__item').first().addClass('active');
@@ -143,8 +145,10 @@ $(function() {
         carousel.find(".tab-button[data-tab="+ nextTabId +"]").addClass('active');
         if ($this.hasClass('control-next')) owlTabs.next();
         if ((parseInt(nextTabId) > 6) && $this.hasClass('control-prev')) owlTabs.prev();
-        items.removeClass('active');
-        container.find(".tabs-content__item[data-tab="+ nextTabId +"]").addClass('active');
+        items.removeClass('active').css({
+            display: 'none'
+        });
+        container.find(".tabs-content__item[data-tab="+ nextTabId +"]").fadeIn("slow").addClass('active');
     })
 
     //clients logo toggle visible
