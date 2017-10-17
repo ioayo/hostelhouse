@@ -1,61 +1,55 @@
 .number-slider
   padding: 25px 0
+  height: auto
+  .container
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
   h3.title
+    display: block
+    width: 100%
     text-align: center
 
 .number-slider__list
-  display: flex
-  justify-content: center
+  width: 800px 
+  height: 400px
   position: relative
-  .owl-prev, .owl-next
-    position: absolute
-    top: 50%
-    margin-top: -30px
-    font-size: 22px
-    border: 3px solid black
-    border-radius: 50%
-    width: 40px
-    height: 40px
-    display: flex
-    justify-content: center
-    align-items: center
-  .owl-prev
-    left: -40px
-  .owl-next
-    right: -40px
+  img 
+    display: hidden 
+    cursor: pointer
 
 .number-slider__item
   border-radius: 10px
   overflow: hidden
   max-width: 60%
   
-.number-slider__list
-  .img-wrap
-    position: relative
+// .number-slider__list
+//   .img-wrap
+//     position: relative
 
-  .overlay
-    position: absolute
-    left: 0
-    right: 0
-    top: 0
-    bottom: 0
-    background-color: rgba(255, 255, 255, .4)
-    z-index: -1
+//   .overlay
+//     position: absolute
+//     left: 0
+//     right: 0
+//     top: 0
+//     bottom: 0
+//     background-color: rgba(255, 255, 255, .4)
+//     z-index: -1
 
-  .prev
-    position: relative
-    right: -900px
-    z-index: -1
-    transform: scale(.7)
-    .overlay
-      z-index: 9
-  .next
-    position: relative
-    left: -900px
-    z-index: -1
-    transform: scale(.7)
-    .overlay
-      z-index: 9
+//   .prev
+//     position: relative
+//     right: -900px
+//     z-index: -1
+//     transform: scale(.7)
+//     .overlay
+//       z-index: 9
+//   .next
+//     position: relative
+//     left: -900px
+//     z-index: -1
+//     transform: scale(.7)
+//     .overlay
+//       z-index: 9
 
 
 

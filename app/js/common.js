@@ -75,18 +75,11 @@ $(function() {
       item.prev().addClass('prev');
     };
 
-    $('.number-slider__list').owlCarousel({
-        items: 1,
-        addClassActive: true,
-        afterAction: sliderResize,
-        stagePadding: 50,
-        responsive: false,
-        navigation: true,
-        dots: true,
-        autoplay: true,
-        autoplayTimeout: 5000,
-        autoplayHoverPause: true,
-        navigationText: ['<i class="fa fa-chevron-left" aria-hidden="true"></i>', '<i class="fa fa-chevron-right" aria-hidden="true"></i>']
+    $('.number-slider__list').waterwheelCarousel({
+        forcedImageWidth: 800,
+        forcedImageHeight: 400,
+        autoPlay: 3000,
+        flankingItems: 1
     });
 
 
@@ -491,5 +484,4 @@ $(function() {
 
         myPolyline3.options.set('visible', true);
     }
-    console.log('ok');
 });
